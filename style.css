@@ -11,25 +11,48 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
+  padding: 5px 10%;
   height: 80px;
 }
 
 .logo img {
   height: 55px;
   width: 55px;
+  transition: all 0;
+}
+
+.header .logo img:hover {
+  transform: scale(1.2);
+}
+.header .nav-links {
+  list-style: none;
+}
+.header .nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+  color: #f7f2f2;
+}
+
+.header.nav-links a {
+  font-size: 700;
+  color: #f7f2f2;
+  text-decoration: none;
+}
+
+.header .nav-links li:hover {
+  transform: scale(1.1);
 }
 
 body {
   height: 100vh;
-  display: flex;
+
   justify-content: center;
   background-color: #111111;
 }
 
 .card {
   background-color: #2f2f2f;
-  height: 240px;
+  height: 250px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -54,8 +77,9 @@ p {
 .card-cointaner {
   display: flex;
   gap: 15px;
-  max-width: 1000px;
+
   text-align: center;
+  padding: 9% 25% 25%;
 }
 
 h3 {
